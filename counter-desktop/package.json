@@ -1,0 +1,22 @@
+{
+  "name": "counter-desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "electron .",
+    "build": "cd ../counter-web && npm run build && cd ../counter-desktop && mkdir builder && cp -r ../counter-web/dist/* ./builder && electron-builder"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^34.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "electron-is-dev": "^3.0.1",
+    "path": "^0.12.7",
+    "url": "^0.11.4"
+  }
+}
